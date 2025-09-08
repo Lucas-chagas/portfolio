@@ -21,12 +21,12 @@ O objetivo é criar um site pessoal para apresentar informações sobre mim, min
 
 # Estrutura do projeto
 
-/portfolio
-│── index.html        # Página inicial
-│── formacao.html     # Página de formação
-│── experiencia.html  # Página de experiência
-│── projetos.html     # Página de projetos
-│── contato.html      # Página de contato
-│── ads.html          # Página do curso
-│── /css              # Estilos personalizados
-│── /Imagens          # Imagens do site
+* /portfolio
+* │── index.html        # Página inicial
+* │── formacao.html     # Página de formação
+* │── experiencia.html  # Página de experiência
+* │── projetos.html     # Página de projetos
+* │── contato.html      # Página de contato
+* │── ads.html          # Página do curso
+* │── /css              # Estilos personalizados
+* │── /Imagens          # Imagens do site
