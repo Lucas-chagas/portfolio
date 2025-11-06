@@ -43,47 +43,25 @@
         <header class="text-center bg-dark text-light p-5">
           <br><br>
           <p class="lead">Profissional de TI • Infraestrutura • Desenvolvimento • Linux • Open Source</p>
-          <h1>Contato</h1>
+          <h1>Local Storage</h1>
         </header>
-        <section class="contato">
-          <form id="form-contato">
-              <input type="text" id="nome" placeholder="Seu nome" required>
-              <input type="email" id="email" placeholder="Seu e-mail" required>
-              <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
-              <button type="submit">Enviar</button>
-          </form>
-          <div id="resposta"></div>
-        </section>
-
-
+        <br><br><br>
+        <h2>Dados recebidos</h2>
+        <p id="mostrar"></p>
+        
         <script>
-            const form = document.getElementById("form-contato");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
+            const nome = localStorage.getItem("nome");
+            const email = localStorage.getItem("email");
+            const mensagem = localStorage.getItem("mensagem");
 
-                const nome = document.getElementById("nome").value;
-                const email = document.getElementById("email").value;
-                const mensagem = document.getElementById("mensagem").value;
-
-                localStorage.setItem("nome", nome);
-                localStorage.setItem("email", email);
-                localStorage.setItem("mensagem", mensagem);
-
-                if (nome === "" || email === "" || mensagem === "") {
-                alert("Por favor, preencha todos os campos antes de enviar.");
-              } else {
-                alert("Mensagem enviada!");
-                this.reset();
-              }
-
-                window.location.href = "info.html";
-            });
+            if (nome && email) {
+                document.getElementById("mostrar").innerText = "Olá " + nome + "!.\nEmail: " + email + "\nRecebemos sua mensagem: \n" + mensagem;
+            } else {
+                document.getElementById("mostrar").innerText = "Nenhum dado encontrado";
+            }
         </script>
 
-
-
-
-
+        <br><br><br><br><br>
         <footer>
             <p>2025 Lucas Chagas - Todos os direitos reservados.</p>
             <a href="https://www.facebook.com/lucaschagas91" target="_blank" class="mx-2">

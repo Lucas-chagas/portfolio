@@ -1,15 +1,16 @@
 # Portfólio Pessoal
+
 Projeto desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas pela Uniguaíraça.
 O objetivo é criar um site pessoal para apresentar informações sobre mim, minha formação, experiências, habilidades e projetos.
 
 
-## Tecnologias utilizadas
+# Tecnologias utilizadas
 * HTML5
 * CSS3
 * Bootstrap 5
 * JavaScript (em algumas interações simples vindas do Bootstrap)
 
-## Funcionalidades
+# Funcionalidades
 * Página inicial com apresentação pessoal (Sobre mim).
 * Seção de Formação acadêmica.
 * Seção de Experiência profissional.
@@ -18,7 +19,8 @@ O objetivo é criar um site pessoal para apresentar informações sobre mim, min
 * Layout responsivo, adaptado para desktop e dispositivos móveis.
 
 
-## Estrutura do projeto
+# Estrutura do projeto
+
 * /portfolio
 * │── /css - (Estilos personalizados)
 * │── /Imagens - (Imagens do site)
